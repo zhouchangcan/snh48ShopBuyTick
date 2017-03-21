@@ -21,7 +21,7 @@ module.exports = {
     'brand_id': 2,
 
     // 抢票次数
-    'raceNumber': 5,
+    // 'raceNumber': 5,
 
     // 抢票间隔时间（ms）
     'times': 2000,
