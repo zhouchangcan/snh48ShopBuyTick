@@ -25,9 +25,11 @@ $(()=>{
                 console.log(result);
                 if(result.HasError){ 
                     // set = setTimeout(buyTick, times);
-                }else{            // 没错误，表示抢票成功
-                    console.log('抢票可能成功');
-                    clearInterval(set);
+                }else{
+                    if(ReturnObject !== null){
+                        console.log('抢票可能成功');
+                        clearInterval(set);
+                    }
                 }
             }
         });
