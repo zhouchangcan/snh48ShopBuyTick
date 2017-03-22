@@ -53,7 +53,7 @@ function buyTick(id, cookie, brand_id = 1, seattype = 3, num = 1){
     };
 
     return new Promise((resolve, reject)=>{
-        set = setTimeout(()=>{
+        set = setInterval(()=>{
             post(postHeaders, postData, resolve);
         }, options['times']);
     });
