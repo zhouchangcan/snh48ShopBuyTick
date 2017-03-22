@@ -17,7 +17,7 @@ function post(postHeaders, postData, resolve){
         if(j.HasError){
             // 有错误
         }else{
-            if(ReturnObject !== null){
+            if(j.ReturnObject !== null){
                 console.log('抢票可能成功！');
                 clearInterval(set);
                 resolve(j);
