@@ -21,6 +21,10 @@ node --harmony start.js
 
 这种表示订单有问题。其中HasError表示有错误，ErrorCode表示错误代码，Message表示错误原因，ReturnObject表示抢到票后的订单号。
 
+> {"HasError":false,"ErrorCode":"","Message":"success","ReturnObject":"null"}
+
+这种也是没有票的
+
 > {"HasError":false,"ErrorCode":"","Message":"success","ReturnObject":"/TOrder/Item/170203-2-100059"}
 
 这种表示抢到票。
