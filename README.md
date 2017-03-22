@@ -1,6 +1,5 @@
 # snh48商城抢票软件
 
----
 
 1、运行环境：node7.5以上版本。
 ```
@@ -13,11 +12,9 @@ node --harmony start.js
   * id：票务id。
   * num：购买票的数量。
   * seattype：票的类别。2，VIP坐票；3，普通坐票；4，普通站票。
-  * brand_id：剧场类型。1，SNH48；2，BEJ48；3，GNZ48；4，SHY48
-  * raceNumber：抢票次数
-  * times：抢票间隔时间（ms）
-  * cookie: cookie
-
+  * brand_id：剧场类型。1，SNH48；2，BEJ48；3，GNZ48；4，SHY48。
+  * times：抢票间隔时间（ms）。
+  * cookie: cookie。
 4、返回结果
 > {"HasError":true,"ErrorCode":"144008","Message":"由于您购买本商品的订单过期或取消已超过1次，\u003cbr/\u003e本商品24小时内无法购买","ReturnObject":null}
 
