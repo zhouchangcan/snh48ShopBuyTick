@@ -26,7 +26,7 @@ $(()=>{
                 if(result.HasError){ 
                     // set = setTimeout(buyTick, times);
                 }else{
-                    if(ReturnObject !== null){
+                    if(result.ReturnObject !== null){
                         console.log('抢票可能成功');
                         clearInterval(set);
                     }
