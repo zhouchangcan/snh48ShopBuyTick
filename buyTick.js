@@ -13,12 +13,15 @@ let set = null;                               // 定时器
 function post(postHeaders, postData, resolve){
     nodegrass.post(href, (data, status, headers)=>{
         const j = JSON.parse(data, null, 4);
+        console.log(j);
         if(j.HasError){
             // 有错误
         }else{
-            console.log(data);
-            clearInterval(set);
-            resolve(j);
+            if(ReturnObject !== null){
+                console.log('抢票可能成功！');
+                clearInterval(set);
+                resolve(j);
+            }  
         }
     }, postHeaders, postData);
 }
