@@ -14,7 +14,7 @@ node --harmony start.js
   * seattype：票的类别。2，VIP坐票；3，普通坐票；4，普通站票。
   * brand_id：剧场类型。1，SNH48；2，BEJ48；3，GNZ48；4，SHY48。
   * times：抢票间隔时间（ms）。
-  * cookie: cookie。
+  * cookie: cookie。
   
 4、返回结果
 > {"HasError":true,"ErrorCode":"144008","Message":"由于您购买本商品的订单过期或取消已超过1次，\u003cbr/\u003e本商品24小时内无法购买","ReturnObject":null}
